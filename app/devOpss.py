@@ -10,4 +10,4 @@ nom_utilisateur = input("Entrez votre nom : ")
 if nom_utilisateur in noms_utilisateurs:
     print(f"Bienvenue, {nom_utilisateur} ! Vous êtes un utilisateur enregistré.")
 else:
-    print(f"Désolée, {nom_utilisateur}. Vous n'êtes pas dans la liste des utilisateurs enregistrés.")
+    print(f"Désolé, {nom_utilisateur}. Vous n'êtes pas dans la liste des utilisateurs enregistrés.")
