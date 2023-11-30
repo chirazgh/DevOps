@@ -1,4 +1,4 @@
-name: Update docker application
+name: Update Docker application
 
 on:
   push:
