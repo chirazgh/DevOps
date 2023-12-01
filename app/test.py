@@ -4,7 +4,7 @@ from username_checker import check_username
 
 class TestUsernameChecker(unittest.TestCase):
     """
-    Tests pour le programme de vérification du nom d'utilisateur
+    Test pour le programme de vérification du nom d'utilisateur
     """
 
     def test_existing_user(self):
