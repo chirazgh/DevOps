@@ -17,4 +17,4 @@ if __name__ == "__main__":
     if check_username(nom_utilisateur, noms_utilisateurs):
         print(f"Bienvenue, {nom_utilisateur} ! Vous êtes un utilisateur enregistré.")
     else:
-        print(f"Désolé, {nom_utilisateur}. Vous n'êtes pas dans la liste des utilisateurs enregistrés.")
+        print(f"Désolée, {nom_utilisateur}. Vous n'êtes pas dans la liste des utilisateurs enregistrées.")
