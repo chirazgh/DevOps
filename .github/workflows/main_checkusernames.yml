@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'checkUsernames'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_95A4A81E1F3649FC9388702AD8621470 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71E8D13010E34D41946A85C6FA476DCE }}
