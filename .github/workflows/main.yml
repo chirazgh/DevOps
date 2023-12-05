@@ -25,10 +25,10 @@ jobs:
         name: Check
         uses: actions/checkout@v2
       -      
-        name: Build and push
+        name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
           context: ./app
           file: ./app/Dockerfile
           push: true
-          tags: gharsallahchiraz97181/devops:1.0.${{github.run_number}}
+          tags: gharsallahchiraz97181/devops:1.0.${{ github.run_number }}
