@@ -13,6 +13,9 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
+    - name: Create Azure directory
+      run: mkdir -p ~/.azure
+
     - name: Set up Azure CLI with publish profile
       run: |
         echo "${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71E8D13010E34D41946A85C6FA476DCE }}" > ~/.azure/azurePubProfile
