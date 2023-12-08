@@ -20,6 +20,8 @@ jobs:
       run: |
         echo "${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71E8D13010E34D41946A85C6FA476DCE }}" > ~/.azure/azurePubProfile
         az cloud set -n AzureCloud
+        az login --service-principal -u "$(az account show --query user.name -o tsv)" --tenant "$(az account show --query tenantId -o tsv)" -p "$(cat ~/.azure/azurePubProfile | grep password | cut -d'"' -f4)"
+
       env:
         AZUREAPPSERVICE_PUBLISHPROFILE_71E8D13010E34D41946A85C6FA476DCE: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71E8D13010E34D41946A85C6FA476DCE }}
 
