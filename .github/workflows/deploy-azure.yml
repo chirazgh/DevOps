@@ -18,12 +18,10 @@ jobs:
 
     - name: Set up Azure CLI with publish profile
       run: |
-        echo "${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}" > ~/.azure/azurePubProfile
+        echo "${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71E8D13010E34D41946A85C6FA476DCE }}" > ~/.azure/azurePubProfile
         az cloud set -n AzureCloud
-        az account clear
-        az account import --source ~/.azure/azurePubProfile
       env:
-        AZUREAPPSERVICE_PUBLISHPROFILE: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+        AZUREAPPSERVICE_PUBLISHPROFILE_71E8D13010E34D41946A85C6FA476DCE: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71E8D13010E34D41946A85C6FA476DCE }}
 
     - name: Deploy to Azure
       run: |
