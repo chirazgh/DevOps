@@ -13,6 +13,14 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
+    - name: Display Azure Credentials
+      run: echo "Azure Credentials are set up"
+      env:
+        AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Check Azure CLI version
+      run: az --version
+
     - name: Set up Azure CLI
       uses: azure/login@v1
       with:
