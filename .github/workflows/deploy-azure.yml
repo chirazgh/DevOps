@@ -26,7 +26,7 @@ jobs:
 
     - name: Deploy to Azure
       run: |
-        az webapp deployment source config --name checkUsernames --resource-group checkUsername_group --repo-url https://github.com/chirazgh/DevOps.git --branch main
+        az webapp deployment source config --name checkUsername --resource-group checkUsername_group --repo-url https://github.com/chirazgh/DevOps.git --branch main
       env:
-        AZURE_WEBAPP_NAME: checkUsernames
+        AZURE_WEBAPP_NAME: checkUsername
         AZURE_RESOURCE_GROUP: checkUsername_group
