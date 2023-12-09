@@ -1,5 +1,10 @@
-
 FROM ubuntu:latest
 RUN apt-get update && apt-get install python3-pip -y
-ADD username_checker.py username_checker.py
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the script into the working directory
+COPY username_checker.py .
+
 CMD python username_checker.py
