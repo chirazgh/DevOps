@@ -19,7 +19,7 @@ jobs:
     - name: Set up Azure CLI with publish profile
       run: az login
       env:
-        AZUREAPPSERVICE_PUBLISHPROFILE: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71E8D13010E34D41946A85C6FA476DCE }}
+        AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Display Azure account info
       run: az account show
